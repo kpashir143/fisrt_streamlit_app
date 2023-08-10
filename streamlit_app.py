@@ -37,3 +37,9 @@ my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
+
+select * from pc_rivery_db.public.fruit_load_list
+
+streamlit.write('Thanks for adding, add_my_fruit)
+#This will not work correctly, but just go with it for now
+my_cur.execute("insert into fruit_load_list values (from streamlit')")
